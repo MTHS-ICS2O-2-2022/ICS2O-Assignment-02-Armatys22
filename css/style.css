@@ -30,13 +30,13 @@
   font-size: 1.25rem;
 }
 
+body {
+  background-color: rgb(255 234 7);
+}
+
 img {
   height: auto;
   width: 450px;
   float: right;
   margin-top: auto;
-}
-
-body {
-  background-color: rgb(255 234 7);
 }

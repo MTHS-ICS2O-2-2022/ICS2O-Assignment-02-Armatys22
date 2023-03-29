@@ -1,14 +1,21 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
+// Created by: Dominik
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
 
+"use strict"
 /**
- * Do basic math.
+ * This function calculates area and perimeter of rectangle.
  */
-function doMathClicked() {
-  document.getElementById("add-math").innerHTML = "<p>The area is:" + (11+11) + "cm</p>"
-  document.getElementById("subtract-math").innerHTML = "The perimeter is:  " + (7 - 3) + "cm</p>"  
-  document.getElementById("multiply-math").innerHTML = "<p>The volume is: " + (9*9+2) + "cm</p>" 
+function calculate() {
+  // input
+  const base = parseInt(document.getElementById("base-of-parallelogram").value)
+  const height = parseInt(document.getElementById("height-of-parallelogram").value)
+
+  // process
+  const area = (base * height)
+
+  // output
+  document.getElementById("area").innerHTML = "Area of parallelogram is: " + area + " cm"
 }
